@@ -1,0 +1,7 @@
+Design Memo – Social Network Graph
+
+For this assignment, I used a graph to create a social network where people can connect through friendships. A graph is the best data structure for this project because it allows people to have multiple connections with other people. Each person is represented by a node, and each friendship is represented by an edge. Since friendships work both ways, I used an undirected graph. This means that when one person becomes friends with another person, both people are added to each other's friends lists.
+
+A regular list would not work as well because it would be harder to organize and keep track of the relationships between different people. A tree would also not be the best choice because trees follow a parent-child structure. In a social network, people can have multiple friendships, and those connections can form cycles. Graphs make it easier to represent these relationships.
+
+One advantage I noticed was that using a dictionary made it easier to find people by their names. I also used an adjacency list, which stores each person's friends in a list. This helps save memory compared to an adjacency matrix when the network has fewer friendships. However, checking for duplicate friendships requires searching through a person's friends list, which can take longer as the network grows. Printing the entire network also takes more time when there are more people and friendships. Overall, I think a graph is the best choice because it makes managing social connections simple and organized.
